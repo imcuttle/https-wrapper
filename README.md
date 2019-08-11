@@ -9,6 +9,8 @@
 
 > Wrap http server as https
 
+Thanks for [`http-proxy`](https://npmsjs.com/http-proxy) and [`create-cert`](https://npmjs.com/create-cert)
+
 ## Installation
 
 ```bash
@@ -21,9 +23,16 @@ yarn add https-wrapper
 
 ```javascript
 const httpsWrapper = require('https-wrapper')
+httpsWrapper({
+  // extends http-proxy options and
+})
 ```
 
-## API
+### CLI
+
+```
+https-wrapper --help
+```
 
 ## Contributing
 
