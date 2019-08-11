@@ -23,9 +23,15 @@ yarn add https-wrapper
 
 ```javascript
 const httpsWrapper = require('https-wrapper')
-httpsWrapper({
-  // extends http-proxy options and
-})
+
+;(async () => {
+  const proxyServer = await httpsWrapper({
+    // extends http-proxy options and create-cert options
+  })
+
+  // More information see https://npmjs.com/http-proxy
+  proxyServer.listen(8080)
+})()
 ```
 
 ### CLI
